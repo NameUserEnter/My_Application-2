@@ -1,0 +1,45 @@
+<?xml version= "1.0" encoding= "utf-8" ?>
+<RelativeLayout  xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas .android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".PersonActivity" >
+
+    <org.osmdroid.views.MapView
+        android:id = "@+id/map"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#07575b">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10sp"
+            android:backgroundTint="#003b46"
+            android:text="Головна" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#003b46"
+            android:onClick="startWorkWithMatrixes"
+            android:text="Студенти" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10sp"
+            android:backgroundTint="#003b46"
+            android:onClick="startWorkWithResults"
+            android:text="Контакти" />
+    </LinearLayout>
+</RelativeLayout >
